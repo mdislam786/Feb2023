@@ -23,6 +23,7 @@ public class LoginPageTest extends TestBase{
 		loginPageObj.enterUserName("demo@techfios.com");
 		loginPageObj.enterPassword("abc123");
 		loginPageObj.clickSignInButton();
+		Thread.sleep(3000);
 		takeScreenshot(driver);		
 	}
 	
@@ -31,6 +32,7 @@ public class LoginPageTest extends TestBase{
 		loginPageObj.enterUserName("demo@techfios.com");
 		loginPageObj.enterPassword("abc123");
 		loginPageObj.clickSignInButton();
+		Thread.sleep(3000);
 		String expectedTitle = "Dashboard- iBilling";
 		String actualTitle = loginPageObj.getPageTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
